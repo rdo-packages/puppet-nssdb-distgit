@@ -1,5 +1,5 @@
-# UUID          Group Name
-6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
-46cafae3854ddb53b4107b726159a2d7f612c281       	puppet-nssdb-distgit-core
-ba81ea559d5aa531ea4f90bc457dad2602e4b696        	puppet-nssdb-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+46cafae3854ddb53b4107b726159a2d7f612c281	puppet-nssdb-distgit-core
+ba81ea559d5aa531ea4f90bc457dad2602e4b696	puppet/puppet-nssdb-distgit-ptl
+global:Registered-Users                 	Registered Users
