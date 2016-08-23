@@ -35,10 +35,8 @@ install -d -m 0755 %{buildroot}/%{_datadir}/openstack-puppet/modules/nssdb/
 cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/nssdb/
 
 
-
 %files
 %{_datadir}/openstack-puppet/modules/nssdb/
 
 
 %changelog
-
