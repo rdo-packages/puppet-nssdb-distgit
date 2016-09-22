@@ -1,3 +1,11 @@
+%{!?upstream_version: %global upstream_version %{commit}}
+%define upstream_name puppet-nssdb
+%global commit 2e163a21fb80d828afede2d4be6214f1171c4887
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
+
 Name:           puppet-nssdb
 Version:        XXX
 Release:        XXX
@@ -6,7 +14,7 @@ License:        Apache-2.0
 
 URL:            https://github.com/rcritten/puppet-nssdb
 
-Source0:        http://github.com/rcritten/puppet-nssdb/archive/%{version}.tar.gz
+Source0:        http://github.com/rcritten/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 
@@ -17,7 +25,7 @@ Requires:       puppet >= 2.7.0
 This Puppet Module manages NSS Databases.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}-%{upstream_version}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
