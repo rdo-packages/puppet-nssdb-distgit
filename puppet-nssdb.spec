@@ -7,8 +7,8 @@
 
 
 Name:           puppet-nssdb
-Version:        XXX
-Release:        XXX
+Version:        1.0.1
+Release:        1%{?dist}
 Summary:        NSS databse Puppet Module
 License:        Apache-2.0
 
@@ -48,3 +48,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/nssdb/
 
 
 %changelog
+* Thu Sep 22 2016 Haikel Guemar <hguemar@fedoraproject.org> - 1.0.1-1
+- Newton update 1.0.1 (2e163a21fb80d828afede2d4be6214f1171c4887)
+
