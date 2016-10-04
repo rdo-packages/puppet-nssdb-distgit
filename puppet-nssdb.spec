@@ -48,3 +48,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/nssdb/
 
 
 %changelog
+# REMOVEME: error caused by commit https://github.com/rcritten/puppet-nssdb/commit/b9e3de3fef3eb359ebfba383cd3cf251e5913621
