@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-nssdb
-%global commit 2e163a21fb80d828afede2d4be6214f1171c4887
+%global commit 2ed2a2df59bbeaf9cf628e1a4a499476842282fd
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-nssdb
-Version:        XXX
-Release:        XXX
+Version:        1.0.1
+Release:        1%{?alphatag}%{?dist}
 Summary:        NSS databse Puppet Module
 License:        ASL 2.0
 
@@ -48,4 +48,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/nssdb/
 
 
 %changelog
+* Tue Sep 29 2020 RDO <dev@lists.rdoproject.org> 1.0.1-1.2ed2a2dgit
+- Update to post 1.0.1 (2ed2a2df59bbeaf9cf628e1a4a499476842282fd)
+
 
